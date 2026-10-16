@@ -1,0 +1,176 @@
+<!DOCTYPE html><html lang="hi"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Happy Birthday Nisha</title><meta name="theme-color" content="#14070d">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14070d;--wine:#4a0f26;--gold:#d9b27c;--cream:#f6ece3;--mute:#c9b4b0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--cream);font:300 15px/1.8 Inter,'DejaVu Sans',sans-serif;overflow-x:hidden}
+.sf{font-family:'Cormorant Garamond','GFS Baskerville',Georgia,serif}
+.eyebrow{font-size:11px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.line{width:56px;height:1px;background:var(--gold);margin:22px auto}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:70}
+/* intro */
+#intro{position:fixed;inset:0;z-index:80;background:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;text-align:center;padding:30px;transition:opacity 1s}
+#intro .ring{width:96px;height:96px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);font:italic 500 40px 'Cormorant Garamond',Georgia,serif;animation:pl 2s infinite;cursor:pointer;background:none}
+@keyframes pl{50%{box-shadow:0 0 0 16px rgba(217,178,124,.1)}}
+#intro h2{font:italic 500 32px 'Cormorant Garamond','GFS Baskerville',Georgia,serif}
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 28px 64px;text-align:center;background:linear-gradient(180deg,rgba(20,7,13,.15) 0%,rgba(20,7,13,.55) 55%,var(--ink) 100%),url(images/boat.jpg) center top/cover}
+.hero h1{font:500 clamp(54px,15vw,110px)/.95 'Cormorant Garamond','GFS Baskerville',Georgia,serif}
+.hero h1 i{display:block;color:var(--gold);font-size:.62em;margin-bottom:6px}
+.hero .sub{max-width:360px;margin:0 auto;color:var(--mute);min-height:3.6em}
+.cta{display:inline-block;margin-top:26px;border:1px solid var(--gold);color:var(--gold);padding:13px 34px;border-radius:2px;letter-spacing:.25em;font-size:11px;text-transform:uppercase;text-decoration:none;background:none;cursor:pointer;font-family:inherit}
+.top{position:absolute;top:26px;left:0;right:0;text-align:center;color:#f6ece3;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+section{padding:84px 26px;max-width:960px;margin:auto;text-align:center}
+h2.h{font:500 clamp(34px,8vw,54px)/1.1 'Cormorant Garamond','GFS Baskerville',Georgia,serif;margin-top:12px}
+h2.h i{color:var(--gold)}
+.rv{opacity:0;transform:translateY(34px);transition:1s}.rv.in{opacity:1;transform:none}
+/* timeline */
+.tl{margin:44px auto 0;max-width:520px;text-align:left;position:relative;padding-left:34px;border-left:1px solid rgba(217,178,124,.45)}
+.tl div{position:relative;margin-bottom:38px}
+.tl div::before{content:"";position:absolute;left:-39px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px rgba(217,178,124,.15)}
+.tl b{font:600 34px 'Cormorant Garamond','GFS Baskerville',Georgia,serif;color:var(--gold);display:block;line-height:1.1}
+.tl span{color:var(--mute)}
+.nums{display:flex;justify-content:center;gap:34px;margin-top:20px;flex-wrap:wrap}
+.nums div{min-width:120px}.nums b{display:block;font:500 64px/1 'Cormorant Garamond','GFS Baskerville',Georgia,serif}
+.nums span{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold)}
+/* gallery */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:40px}
+.gal figure{position:relative;overflow:hidden;border-radius:3px;aspect-ratio:3/4;cursor:zoom-in}
+.gal figure.w{grid-column:span 2;aspect-ratio:16/10}
+.gal img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 14px 12px;background:linear-gradient(transparent,rgba(20,7,13,.85));font:italic 500 18px 'Cormorant Garamond','GFS Baskerville',Georgia,serif;text-align:left}
+#lb{position:fixed;inset:0;background:rgba(10,3,6,.96);z-index:75;display:none;align-items:center;justify-content:center;padding:14px}
+#lb img{max-width:100%;max-height:92vh;border-radius:3px}
+/* letter */
+.paper{margin-top:38px;background:linear-gradient(160deg,#fbf3ea,#f0e1d2);color:#3a1a26;text-align:left;padding:44px 30px;border-radius:3px;box-shadow:0 30px 70px rgba(0,0,0,.5);position:relative}
+.paper::before{content:"";position:absolute;inset:10px;border:1px solid rgba(122,31,61,.25);pointer-events:none}
+.paper p{margin-bottom:16px;font-size:15.5px}
+.paper .hi{font:italic 600 34px 'Cormorant Garamond','GFS Baskerville',Georgia,serif;color:#7a1f3d}
+.paper .sig{text-align:right;font:italic 600 30px 'Cormorant Garamond','GFS Baskerville',Georgia,serif;color:#7a1f3d;margin:6px 0 0}
+/* wishes */
+.cards{display:grid;gap:14px;margin-top:40px}
+.card{border:1px solid rgba(217,178,124,.3);padding:28px;text-align:left;background:linear-gradient(160deg,rgba(74,15,38,.55),rgba(20,7,13,.4))}
+.card small{font:500 13px 'Cormorant Garamond',Georgia,serif;letter-spacing:.3em;color:var(--gold)}
+.card h3{font:500 28px 'Cormorant Garamond','GFS Baskerville',Georgia,serif;margin:4px 0 6px}
+.card p{color:var(--mute)}
+.fam{margin-top:44px;border-radius:3px;width:100%;max-width:520px}
+footer{padding:70px 26px 90px;text-align:center;background:radial-gradient(circle at 50% 0,rgba(74,15,38,.7),transparent 70%)}
+footer h2.h{font-size:clamp(40px,10vw,70px)}
+#msg{margin-top:22px;min-height:3em;font:italic 500 24px 'Cormorant Garamond',Georgia,serif;color:var(--gold)}
+@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}.gal figure.w{grid-column:span 2;aspect-ratio:auto}.cards{grid-template-columns:repeat(3,1fr)}}
+.tn{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:38px}
+.tn figure{position:relative;aspect-ratio:3/4;overflow:hidden;border-radius:3px;border:1px solid rgba(217,178,124,.35)}
+.tn img{width:100%;height:100%;object-fit:cover;display:block}
+.tn figure:first-child img{filter:sepia(.35) contrast(1.02)}
+.tn figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 12px;background:linear-gradient(transparent,rgba(20,7,13,.9));font:italic 500 22px 'Cormorant Garamond',Georgia,serif;color:var(--gold)}
+@media(min-width:760px){.tn{max-width:620px;margin-left:auto;margin-right:auto}}
+</style></head><body>
+<canvas id="fx"></canvas>
+
+<div id="intro">
+  <p class="eyebrow">A birthday letter</p>
+  <button class="ring" id="open" aria-label="Open">N</button>
+  <h2>Nisha, ye tumhare liye hai</h2>
+  <p style="color:var(--mute)">Tap karke kholo</p>
+</div>
+
+<header class="hero">
+  <div class="top eyebrow" style="color:#f6ece3">17 · Oct · 2026</div>
+  <p class="eyebrow">A birthday letter for</p>
+  <h1><i>Happy Birthday</i>Nisha</h1>
+  <div class="line"></div>
+  <p class="sub" id="typed"></p>
+  <div><a class="cta" href="#story">Scroll karo</a></div>
+</header>
+
+<section id="story" class="rv">
+  <p class="eyebrow">Our story</p>
+  <h2 class="h">Ek safar, <i>do dil</i></h2>
+  <div class="tl">
+    <div><b>2015</b><span>Humari kahani shuru hui. Wo din jab sab kuch badal gaya.</span></div>
+    <div><b>24 February 2025</b><span>Hum hamesha ke liye ek ho gaye.</span></div>
+    <div><b>17 October 2026</b><span>Tumhara birthday. Shaadi ko poore 600 din.</span></div>
+  </div>
+  <div class="nums"><div><b id="n1">0</b><span>Saal saath</span></div><div><b id="n2">0</b><span>Din shaadi ke baad</span></div></div>
+</section>
+
+<section class="rv">
+  <p class="eyebrow">Then &amp; now</p>
+  <h2 class="h">Pehle bhi, <i>aaj bhi</i></h2>
+  <div class="tn">
+    <figure><img src="images/old.jpg" alt=""><figcaption>Pehle</figcaption></figure>
+    <figure><img src="images/f2.jpg" alt=""><figcaption>Aaj</figcaption></figure>
+  </div>
+  <p class="sf" style="font-size:22px;color:var(--mute);margin-top:22px">Chehre badle, saath nahi.</p>
+</section>
+
+<section class="rv">
+  <p class="eyebrow">Memories</p>
+  <h2 class="h">Humare <i>khoobsurat pal</i></h2>
+  <div class="gal">
+    <figure class="w"><img src="images/glasses2.jpg" alt="" style="object-position:center 30%"><figcaption>Humara safar</figcaption></figure>
+    <figure><img src="images/red.jpg" alt="" style="object-position:center 25%"><figcaption>Meri shararat</figcaption></figure>
+    <figure><img src="images/purple.jpg" alt=""><figcaption>Meri Nisha</figcaption></figure>
+    <figure><img src="images/p3.jpg" alt=""><figcaption>Meri duniya</figcaption></figure>
+    <figure><img src="images/bench.jpg" alt="" style="object-position:center 30%"><figcaption>Peace, hamesha</figcaption></figure>
+    <figure class="w"><img src="images/f2.jpg" alt=""><figcaption>Hum sab, ek frame mein</figcaption></figure>
+    <figure><img src="images/finger.jpg" alt="" style="object-position:center 30%"><figcaption>Meri pagli</figcaption></figure>
+    <figure><img src="images/duo.jpg" alt="" style="object-position:center 30%"><figcaption>Saath, hamesha</figcaption></figure>
+    <figure><img src="images/p2.jpg" alt=""><figcaption>Meri muskaan</figcaption></figure>
+    <figure><img src="images/solo.jpg" alt=""><figcaption>Raat ki roshni</figcaption></figure>
+    <figure class="w"><img src="images/f1.jpg" alt=""><figcaption>Hamari family</figcaption></figure>
+  </div>
+</section>
+
+<section class="rv">
+  <p class="eyebrow">A letter</p>
+  <h2 class="h">Dil se, <i>sirf tumhare liye</i></h2>
+  <div class="paper">
+    <p class="hi">Meri Nisha,</p>
+    <p>Aaj tumhara din hai, aur sach bolun toh meri zindagi ka sabse khoobsurat hissa tum ho. 2015 se aaj tak, 11 saal ka saath.</p>
+    <p>Main jaanta hoon main bahot gussail hoon. Gusse mein maine mobile tak tode hain. Main propose ki date bhool gaya, anniversary bhool gaya, kitni hi dates bhoolta aaya hoon. Phir bhi tum kabhi mera saath chhodkar nahi gayi. Mera gussa bhi tumne sambhala, meri galtiyan bhi.</p>
+    <p>Aaj main tumse promise karta hoon: apne gusse par kaam karunga, aur wo har date yaad rakhunga jo tumhare liye matter karti hai. 17 October aur 24 February to ab kabhi nahi bhoolunga.</p>
+    <p>Tumne mujhe non-veg se mana kiya tha. Ab ye meri khud ki choice ban chuki hai, aur main ise nibhaunga. Par agar kabhi kahin galti ho jaye, toh please mujhe maaf kar dena.</p>
+    <p>Tumhare sabr aur pyaar ke liye dil se shukriya. Bhagwan kare ye saal tumhe saari khushiyan aur sukoon de.</p>
+    <p class="sig">Hamesha tumhara, Anurag</p>
+  </div>
+</section>
+
+<section class="rv">
+  <p class="eyebrow">My wishes</p>
+  <h2 class="h">Is saal ke liye <i>teen dua</i></h2>
+  <div class="cards">
+    <div class="card"><small>I</small><h3>Khushi</h3><p>Tumhari har subah muskurahat se shuru ho.</p></div>
+    <div class="card"><small>II</small><h3>Sapne</h3><p>Tumhare saare sapne is saal poore hon.</p></div>
+    <div class="card"><small>III</small><h3>Sukoon</h3><p>Humara ghar hamesha pyaar se bhara rahe.</p></div>
+  </div>
+  <img class="fam" src="images/art.jpg" alt="Humari family">
+</section>
+
+<footer class="rv">
+  <p class="eyebrow">With all my love</p>
+  <h2 class="h">Happy Birthday,<br><i>meri jaan</i></h2>
+  <div class="line"></div>
+  <button class="cta" id="wish">Make a wish</button>
+  <p id="msg"></p>
+</footer>
+
+<div id="lb"><img alt=""></div>
+<script>
+const cv=document.getElementById('fx'),x=cv.getContext('2d');let P=[];
+function fit(){cv.width=innerWidth;cv.height=innerHeight}fit();addEventListener('resize',fit);
+function boom(n=160){const c=['#d9b27c','#f6ece3','#ff8fa8','#c9184a','#ffe3c2'];for(let i=0;i<n;i++)P.push({x:innerWidth/2,y:innerHeight*.4,vx:(Math.random()-.5)*15,vy:Math.random()*-14-2,s:Math.random()*7+4,c:c[i%5],r:Math.random()*6,l:170})}
+(function L(){x.clearRect(0,0,cv.width,cv.height);P=P.filter(p=>p.l>0);P.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.vy+=.28;p.r+=.2;p.l--;x.save();x.translate(p.x,p.y);x.rotate(p.r);x.fillStyle=p.c;x.globalAlpha=Math.min(1,p.l/40);x.fillRect(-p.s/2,-p.s/2,p.s,p.s*.6);x.restore()});requestAnimationFrame(L)})();
+const msg="Aaj ka din sirf tumhara hai. Tum meri duniya ki sabse khaas insaan ho.";
+function type(){const t=document.getElementById('typed');let i=0;(function n(){if(i<=msg.length){t.textContent=msg.slice(0,i++);setTimeout(n,45)}})()}
+document.getElementById('open').onclick=()=>{const i=document.getElementById('intro');i.style.opacity=0;setTimeout(()=>i.remove(),1000);boom(220);setTimeout(()=>boom(140),700);type()};
+let done=false;function count(){if(done)return;done=true;[['n1',11],['n2',600]].forEach(([id,t])=>{const el=document.getElementById(id);let c=0;const s=Math.max(1,Math.round(t/60));const iv=setInterval(()=>{c=Math.min(t,c+s);el.textContent=c;if(c>=t)clearInterval(iv)},25)})}
+const io=new IntersectionObserver(e=>e.forEach(v=>{if(v.isIntersecting){v.target.classList.add('in');if(v.target.id==='story')count()}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const lb=document.getElementById('lb');document.querySelectorAll('.gal img').forEach(i=>i.parentElement.onclick=()=>{lb.firstElementChild.src=i.src;lb.style.display='flex'});lb.onclick=()=>lb.style.display='none';
+document.getElementById('wish').onclick=()=>{boom(260);setTimeout(()=>boom(160),500);document.getElementById('msg').textContent='Jo bhi maanga hai, wo pooora hoga. Main saath hoon.'};
+</script></body></html>
